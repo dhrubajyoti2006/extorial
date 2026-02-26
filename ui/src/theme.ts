@@ -3,9 +3,9 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#80ec13",
-      dark: "#72d611",
-      contrastText: "#141811"
+      main: "#0da2e7",
+      dark: "#0b8ac5",
+      contrastText: "#ffffff"
     },
     secondary: {
       main: "#556b2f",
@@ -22,7 +22,10 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`
+    fontFamily: `"Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`
+  },
+  shape: {
+    borderRadius: 4
   },
   components: {
     MuiTextField: {
@@ -49,14 +52,14 @@ const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          borderRadius: 8
+          borderRadius: 4
         }
       }
     },
     MuiPaper: {
       styleOverrides: {
         rounded: {
-          borderRadius: 10
+          borderRadius: 4
         }
       }
     },
@@ -67,17 +70,17 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textTransform: "none",
-          borderRadius: 8,
+          borderRadius: 4,
           fontWeight: 600,
           minHeight: 36,
           paddingTop: 6,
           paddingBottom: 6
         },
         containedPrimary: {
-          backgroundColor: "#80ec13",
-          color: "#161b0d",
+          backgroundColor: "#0da2e7",
+          color: "#ffffff",
           "&:hover": {
-            backgroundColor: "#72d611"
+            backgroundColor: "#0b8ac5"
           }
         },
         outlined: {

@@ -21,21 +21,4 @@ export class DataService {
       return response;
     }
   }
-
-  public static async getById(id: string) {
-    const response = new ApiResponse<Employee | null>();
-    try {
-      const employee = employees.find((item) => item.id === id) ?? null;
-      response.data = employee;
-      if (employee) {
-        response.addSuccess();
-      } else {
-        response.addError("Employee not found");
-      }
-      return response;
-    } catch (error) {
-      response.addExceptionWithText(error instanceof Error ? error.message : "Unknown error");
-      return response;
-    }
-  }
 }

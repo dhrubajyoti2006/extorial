@@ -42,7 +42,7 @@ export const CONFIG: {
   }
 } = {
   site: {
-    name: 'App Title',
+    name: 'Extorial',
     serverUrl: import.meta.env.VITE_SERVER_URL ?? '',
     assetURL: import.meta.env.VITE_ASSET_URL ?? '',
     basePath: import.meta.env.VITE_BASE_PATH ?? '',

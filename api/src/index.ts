@@ -10,7 +10,7 @@ const port = 3000;
 app.use(express.json());
 
 const apiRouter = Router();
-apiRouter.use("/data", dataRouter);
+apiRouter.use("/", dataRouter);
 
 app.use("/api", apiRouter);
 
