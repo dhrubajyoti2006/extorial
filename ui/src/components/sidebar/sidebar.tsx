@@ -61,7 +61,7 @@ export function LeftSidebar({ collapsed, onToggle }: LeftSidebarProps) {
         >
           <Box
             component="img"
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             onClick={collapsed ? onToggle : undefined}
             sx={{
               width: 30,

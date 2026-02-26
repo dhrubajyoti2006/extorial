@@ -24,7 +24,7 @@ export default function LoginPage() {
                 <Box sx={{ textAlign: 'center', mb: 4 }}>
                     <Box
                         component="img"
-                        src="/logo.png"
+                        src={`${import.meta.env.BASE_URL}logo.png`}
                         sx={{
                             width: 64,
                             height: 64,
